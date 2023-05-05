@@ -1,4 +1,5 @@
 # Roblogic Codespace Template
+[![OpenSSF Best Practices](https://bestpractices.coreinfrastructure.org/projects/7341/badge)](https://bestpractices.coreinfrastructure.org/projects/7341)
 
 <img src="./assets/roblogic-logo.png" width="125" height="125">
 
