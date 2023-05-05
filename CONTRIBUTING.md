@@ -1,6 +1,6 @@
-# Contributing to ML-DL Codespace Template
+# Contributing to Roblogic Codespace Template
 
-We welcome contributions to improve and expand the ML-DL Codespace Template. Please follow these steps to contribute:
+We welcome contributions to improve and expand the Roblogic Codespace Template. Please follow these steps to contribute:
 
 1. Fork the repository
 2. Create a new branch (`git checkout -b my-feature-branch`)
@@ -33,4 +33,4 @@ When submitting a pull request, please ensure that:
 - The code passes all tests and builds successfully
 - The changes are accompanied by appropriate unit tests
 
-We will review your pull request and provide feedback as soon as possible. Thank you for your interest in contributing to the ML-DL Codespace Template!
+We will review your pull request and provide feedback as soon as possible. Thank you for your interest in contributing to the Roblogic Codespace Template!
