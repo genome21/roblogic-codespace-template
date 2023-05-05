@@ -1,13 +1,12 @@
 # Roblogic Codespace Template
 
-![Roblogic Codespace Template Logo](./roblogic-logo.png)
+<img src="./roblogic-logo.png" width="125" height="125">
 
 Roblogic Codespace Template is a comprehensive and customizable template for machine learning and deep learning projects with a focus on Python backend and React frontend development. This template is designed to help developers and researchers quickly set up their work environment and focus on building efficient algorithms and models for their machine learning and deep learning tasks.
 
 ## Table of Contents
 
 - [Features](#features)
-- [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Customization](#customization)
