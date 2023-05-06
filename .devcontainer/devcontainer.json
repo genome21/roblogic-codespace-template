@@ -1,3 +1,4 @@
+// "_copyright": "Copyright (c) 2023 Genome21. All rights reserved.",
 {
   "image": "mcr.microsoft.com/devcontainers/universal:2",
   "hostRequirements": {
@@ -22,3 +23,5 @@
     }
   }
 }
+
+

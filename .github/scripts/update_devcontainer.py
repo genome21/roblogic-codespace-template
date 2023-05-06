@@ -1,4 +1,5 @@
 """ Update devcontainer.json with latest versions of extensions """
+# Copyright (c) 2023 Genome21. All rights reserved.
 import json
 import requests
 
