@@ -1,4 +1,5 @@
 // "_copyright": "Copyright (c) 2023 Genome21. All rights reserved.",
+// "_license": "MIT License",
 {
   "image": "mcr.microsoft.com/devcontainers/universal:2",
   "hostRequirements": {
