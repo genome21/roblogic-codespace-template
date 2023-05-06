@@ -1,4 +1,3 @@
-```
 # React-Python Codespace Template Documentation
 
 ## Table of Contents
