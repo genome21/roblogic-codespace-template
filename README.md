@@ -30,13 +30,13 @@ Roblogic Codespace Template is a comprehensive and customizable template for mac
 1. Clone the repository
 
 ```bash
-git clone https://github.com/genome21/ml-dl-codespace-template.git
+git clone https://github.com/genome21/roblogic-codespace-template.git
 ```
 
 2. Change directory to the project folder
 
 ```bash
-cd ml-dl-codespace-template
+cd roblogic-codespace-template
 ```
 
 3. Install dependencies
