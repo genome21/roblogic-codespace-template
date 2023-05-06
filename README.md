@@ -77,3 +77,25 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 - The ML-DL Codespace Template is built and maintained by [genome21](https://github.com/genome21) and its contributors.
+
+## Additional Documentation
+
+This repository contains additional documentation to help you understand various aspects of the project:
+
+- [Getting Started Guide](./GETTING_STARTED.md): A guide to help you set up and start using the Roblogic Codespace Template.
+- [Updating Devcontainer Configurations](.github/scripts/updating_devcontainer.md): A guide on how to update the `devcontainer.json` file using GitHub Actions.
+- [Ensuring a Bus Factor of 2 or More](./BUS_FACTOR.md): Learn how the project addresses the "bus factor" requirement using GitHub Actions for automated updates.
+- [Code of Conduct](./CODE_OF_CONDUCT.md): A guide to help you understand the project's code of conduct and how to report unacceptable behavior.
+- [Code Review](./CODE_REVIEW.md): A guide to help you understand the project's code review process and how to contribute to the project.
+- [Governance](./GOVERNANCE.md): A guide to help you understand the project's governance model.
+- [Hardening Headers](./HARDENING_HEADERS.md): A guide to help you understand the project's hardening headers.
+- [Legal Mechanisms](./LEGAL_MECHANISMS.md): A guide to help you understand the project's legal mechanisms.
+- [Roadmap and Architecture](./ROADMAP_AND_ARCHITECTURE.md): A guide to help you understand the project's roadmap and architecture.
+- [Security Assurance](./SECURITY_ASSURANCE.md): A guide to help you understand the project's security assurance.
+- [Security Requirements](./SECURITY_REQUIREMENTS.md): A guide to help you understand the project's security requirements.
+- [Security Review](./SECURITY_REVIEW.md): A guide to help you understand the project's security review process.
+- [Style Guide and Enforcement Policy](./STYLE_GUIDE_AND_ENFORCEMENT.md): A guide to help you understand the project's style guide and enforcement policy and how to contribute to the project.
+- [Taks](./TASKS.md): A starting point for new contributors to find tasks to work on.
+- [Testing an CI/CD](./TESTING_AND_CI.md): A guide to help you understand the project's testing and CI/CD process.
+
+For more information, please refer to the individual documentation files.
