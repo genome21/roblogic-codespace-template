@@ -76,7 +76,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-- The ML-DL Codespace Template is built and maintained by [genome21](https://github.com/genome21) and its contributors.
+- The Roblogic Codespace Template is built and maintained by [genome21](https://github.com/genome21) and its contributors.
 
 ## Additional Documentation
 
