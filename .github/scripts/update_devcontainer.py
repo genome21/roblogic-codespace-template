@@ -28,7 +28,7 @@ def get_latest_version(extension_id):
 def main():
     """ Main function """
     # Load devcontainer.json
-    with open("../../.devcontainer/devcontainer.json", "r") as f:
+    with open("/.devcontainer/devcontainer.json", "r") as f:
         devcontainer = json.load(f)
 
     # Update extensions
