@@ -1,6 +1,7 @@
 # Roblogic Codespace Template
 [![OpenSSF Best Practices](https://bestpractices.coreinfrastructure.org/projects/7341/badge)](https://bestpractices.coreinfrastructure.org/projects/7341)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
+[![Update devcontainer.json](https://github.com/genome21/roblogic-codespace-template/actions/workflows/update_devcontainer.yml/badge.svg)](https://github.com/genome21/roblogic-codespace-template/actions/workflows/update_devcontainer.yml)
 
 <img src="./assets/roblogic-logo.png" width="125" height="125">
 
