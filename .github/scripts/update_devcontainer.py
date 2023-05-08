@@ -43,7 +43,7 @@ def main():
 
     # Save updated devcontainer.json
     with open(".devcontainer/devcontainer.json", "w") as f:
-        json.dump(devcontainer, f, indent=4, sort_keys=True)
+        json.dump(devcontainer, f, indent=2, sort_keys=True)
 
 if __name__ == "__main__":
     main()
