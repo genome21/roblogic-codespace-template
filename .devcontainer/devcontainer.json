@@ -12,12 +12,12 @@
     },
     "vscode": {
       "extensions": [
-		"ms-toolsai.jupyter",
-		"ms-python.python",
-		"sourcery.sourcery",
-		"GitHub.copilot",
-		"amazonwebservices.aws-toolkit-vscode",
-		"ms-python.pylint"
+	"ms-toolsai.jupyter",
+	"ms-python.python",
+	"sourcery.sourcery",
+	"GitHub.copilot",
+	"amazonwebservices.aws-toolkit-vscode",
+	"ms-python.pylint"
 	]
     }
   }
