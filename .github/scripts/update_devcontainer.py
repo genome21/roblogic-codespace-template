@@ -40,11 +40,15 @@ def main():
         return
 
     # Update extensions
-    if "extensions" in devcontainer:
-        for index, extension in enumerate(devcontainer["extensions"]):
+    customizations = devcontainer.get("customizations", {})
+    vscode = customizations.get("vscode", {})
+    extensions = vscode.get("extensions", [])
+
+    if extensions:
+        for index, extension in enumerate(extensions):
             extension_id = extension.split("@")[0]
             if latest_version := get_latest_version(extension_id):
-                devcontainer["extensions"][index] = f"{extension_id}@{latest_version}"
+                extensions[index] = f"{extension_id}@{latest_version}"
                 print(f"Updated {extension_id} to version {latest_version}")
 
     # Save updated devcontainer.json
