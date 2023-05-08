@@ -1,29 +1,31 @@
-""" Update devcontainer.json with latest versions of extensions """
-# Copyright (c) 2023 Genome21. All rights reserved.
-# Licensed under the MIT License. See LICENSE in the project root for license information.
 import json
+import sys
+from typing import Optional
+
 import requests
 
 
-def get_latest_version(extension_id):
-    """ Get latest version of extension from Visual Studio Marketplace """
-    url = "https://marketplace.visualstudio.com/_apis/public/gallery/extensionquery"
-    payload = {
-        "filters": [{
-            "criteria": [{"filterType": 7, "value": extension_id}]
-        }],
-        "flags": 8704
-    }
-    headers = {
-        "Content-Type": "application/json",
-        "Accept": "application/json;api-version=6.1-preview.1"
-    }
-    response = requests.post(url, json=payload, headers=headers)
+def get_latest_version(extension_id: str) -> Optional[str]:
+    """ Get the latest version of a Visual Studio Code extension """
+    try:
+        url = f"https://marketplace.visualstudio.com/_apis/public/gallery/extensionquery"
+        headers = {"Content-Type": "application/json", "Accept": "application/json;api-version=3.0-preview.1"}
+        payload = {
+            "filters": [{"criteria": [{"filterType": 7, "value": extension_id}]}],
+            "assetTypes": [],
+            "flags": 870,
+        }
 
-    if response.status_code == 200:
+        response = requests.post(url, headers=headers, json=payload)
+        response.raise_for_status()
+
         data = response.json()
         if data["results"]:
             return data["results"][0]["extensions"][0]["versions"][0]["version"]
+
+    except Exception as e:
+        print(f"Error fetching latest version for {extension_id}: {e}")
+
     return None
 
 
@@ -33,8 +35,11 @@ def main():
     file_path = ".devcontainer/devcontainer.json"
 
     try:
+        print(f"Reading file: {file_path}")  # Add this line
         with open(file_path, "r") as f:
-            devcontainer = json.load(f)
+            content = f.read()
+            print(f"File content: {content}")  # Add this line
+            devcontainer = json.loads(content)
     except Exception as e:
         print(f"Error loading JSON file '{file_path}': {e}")
         return
