@@ -28,8 +28,10 @@ def get_latest_version(extension_id):
 def main():
     """ Main function """
     # Load devcontainer.json
-    with open("/.devcontainer/devcontainer.json", "r") as f:
+    with open("/home/runner/work/roblogic-codespace-template/roblogic-codespace-template/.devcontainer/devcontainer.json", "r") as f:
         devcontainer = json.load(f)
+
+
 
     # Update extensions
     if "extensions" in devcontainer:
@@ -40,7 +42,7 @@ def main():
                 print(f"Updated {extension_id} to version {latest_version}")
 
     # Save updated devcontainer.json
-    with open(".devcontainer/devcontainer.json", "w") as f:
+    with open("/home/runner/work/roblogic-codespace-template/roblogic-codespace-template/.devcontainer/devcontainer.json", "w") as f:
         json.dump(devcontainer, f, indent=4, sort_keys=True)
 
 if __name__ == "__main__":
