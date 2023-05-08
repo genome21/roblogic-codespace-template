@@ -31,8 +31,6 @@ def main():
     with open(".devcontainer/devcontainer.json", "r") as f:
         devcontainer = json.load(f)
 
-
-
     # Update extensions
     if "extensions" in devcontainer:
         for index, extension in enumerate(devcontainer["extensions"]):
