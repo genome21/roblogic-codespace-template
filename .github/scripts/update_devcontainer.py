@@ -4,6 +4,7 @@
 import json
 import requests
 
+
 def get_latest_version(extension_id):
     """ Get latest version of extension from Visual Studio Marketplace """
     url = "https://marketplace.visualstudio.com/_apis/public/gallery/extensionquery"
@@ -25,11 +26,18 @@ def get_latest_version(extension_id):
             return data["results"][0]["extensions"][0]["versions"][0]["version"]
     return None
 
+
 def main():
     """ Main function """
     # Load devcontainer.json
-    with open(".devcontainer/devcontainer.json", "r") as f:
-        devcontainer = json.load(f)
+    file_path = ".devcontainer/devcontainer.json"
+
+    try:
+        with open(file_path, "r") as f:
+            devcontainer = json.load(f)
+    except Exception as e:
+        print(f"Error loading JSON file '{file_path}': {e}")
+        return
 
     # Update extensions
     if "extensions" in devcontainer:
@@ -40,8 +48,9 @@ def main():
                 print(f"Updated {extension_id} to version {latest_version}")
 
     # Save updated devcontainer.json
-    with open(".devcontainer/devcontainer.json", "w") as f:
-        json.dump(devcontainer, f, indent=2, sort_keys=True)
+    with open(file_path, "w") as f:
+        json.dump(devcontainer, f, indent=4, sort_keys=True)
+
 
 if __name__ == "__main__":
     main()
