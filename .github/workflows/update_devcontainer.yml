@@ -3,6 +3,14 @@ name: Update devcontainer.json
 on:
   schedule:
     - cron: '0 0 * * *' # Run daily at midnight
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: 'warning'
+      tags:
+        description: 'Manual run test scenario'
 
 jobs:
   update:
