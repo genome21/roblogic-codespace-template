@@ -9,5 +9,5 @@ community_bridge: # Replace with a single Community Bridge project-name e.g., cl
 liberapay: # Replace with a single Liberapay username
 issuehunt: genome21
 otechie: # Replace with a single Otechie username
-lfx_crowdfunding: 457feb59-a347-486e-b25c-06d5d7f36762
+lfx_crowdfunding: # Replace with Linux Foundation project ID
 custom: # Replace with up to 4 custom sponsorship URLs e.g., ['link1', 'link2']
