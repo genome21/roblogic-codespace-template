@@ -2,7 +2,7 @@ name: Update devcontainer.json
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Run daily at midnight
+    - cron: '0 0 1 * *' # Run at midnight on the first day of every month
   workflow_dispatch:
     inputs:
       logLevel:
