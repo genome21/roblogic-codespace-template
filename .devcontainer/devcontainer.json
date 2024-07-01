@@ -5,11 +5,11 @@
         },
         "vscode": {
             "extensions": [
-                "ms-toolsai.jupyter@2024.4.2024042601",
-                "ms-python.python@2024.5.11172159",
-                "sourcery.sourcery@1.16.0",
-                "GitHub.copilot@1.184.848",
-                "amazonwebservices.aws-toolkit-vscode@3.1.0",
+                "ms-toolsai.jupyter@2024.6.2024062802",
+                "ms-python.python@2024.9.2024062703",
+                "sourcery.sourcery@1.19.0",
+                "GitHub.copilot@1.208.960",
+                "amazonwebservices.aws-toolkit-vscode@3.12.0",
                 "ms-python.pylint@2023.11.13481007"
             ]
         }
